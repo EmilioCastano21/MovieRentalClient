@@ -9,6 +9,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { CreatemovieComponent } from './createmovie/createmovie.component';
 import { ViewmoviesComponent } from './viewmovies/viewmovies.component';
 import {CreateuserComponent} from "./createuser/createuser.component";
+import {EdituserComponent} from "./edituser/edituser.component";
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {CreateuserComponent} from "./createuser/createuser.component";
     HomepageComponent,
     CreatemovieComponent,
     ViewmoviesComponent,
-    CreateuserComponent
+    CreateuserComponent,
+    EdituserComponent
   ],
   imports: [
     BrowserModule,
