@@ -8,13 +8,15 @@ import { MovieService } from './service/movie.service';
 import { HomepageComponent } from './homepage/homepage.component';
 import { CreatemovieComponent } from './createmovie/createmovie.component';
 import { ViewmoviesComponent } from './viewmovies/viewmovies.component';
+import {CreateuserComponent} from "./createuser/createuser.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
     CreatemovieComponent,
-    ViewmoviesComponent
+    ViewmoviesComponent,
+    CreateuserComponent
   ],
   imports: [
     BrowserModule,
