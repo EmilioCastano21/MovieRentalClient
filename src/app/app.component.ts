@@ -1,10 +1,31 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import {Movie} from "./movie";
+import {MovieService} from "./movie.service";
+import {HttpErrorResponse, HttpResponse} from "@angular/common/http";
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'MovieRentalApplication';
+export class AppComponent implements OnInit{
+  public movies: Movie[] = [];
+
+  constructor(private movieService: MovieService) {
+  }
+
+  ngOnInit(){
+    this.getMovies();
+  }
+  public getMovies():void {
+    this.movieService.getMovies().subscribe(
+      (response: Movie[]) => {
+        this.movies = response;
+      },
+      (error: HttpErrorResponse)=> {
+        alert(error.message);
+      }
+    );
+  }
+  
 }
