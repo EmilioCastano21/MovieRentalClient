@@ -1,0 +1,52 @@
+
+.navbar
+{
+  background-color: black;
+  height: 8rem;
+  overflow-x: hidden;
+  overflow-y: hidden !important;
+}
+
+.navbar-item
+{
+
+  font-family: "Helvetica";
+  color: white;
+  font-size: 25px;
+  padding-right: 30px;
+
+}
+.navbar-item:hover
+{
+  background-color: black;
+  color: #66B2FF;
+}
+
+.navbar-link
+{
+  color: white;
+  background-color: black;
+}
+.navbar-link:hover
+{
+  background-color: black;
+  color: #66B2FF;
+}
+
+.navbar-dropdown
+{
+  background-color: black;
+}
+
+.navbar-dropdown:hover
+{
+  background-color: black;
+
+}
+
+.navbar-start{
+  position: relative;
+  left: 22px;
+  top: 57px;
+}
+
