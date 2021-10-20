@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Movie} from "./viewmovies/movie";
+import {Movie} from "./entity/movie";
 import {MovieService} from "./service/movie.service";
 import {HttpErrorResponse, HttpResponse} from "@angular/common/http";
 
