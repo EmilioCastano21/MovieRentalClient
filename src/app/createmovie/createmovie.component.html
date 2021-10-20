@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="box">
-  <form action="/">
+  <form #addForm="ngForm" (ngSubmit)="onAddMovie(addForm)">
     <div class="banner">
       <div  class="image"></div>
       <h1>Movie Registration</h1>
@@ -17,11 +17,11 @@
     <div class="colums">
       <div class="item">
         <label for="title">Movie Title</label>
-        <input id="title" type="text" name="title" required/>
+        <input id="title" type="text" ngModel name="title" required/>
       </div>
       <div class="item">
         <label for="releaseDate">Release Date:</label>
-        <input type="date" id="releaseDate" name="releaseDate">
+        <input type="date" id="releaseDate" ngModel name="releaseDate">
       </div>
 <!--      <div class="item">-->
 <!--        <label for="releaseDate">Release Date</label>-->
@@ -29,24 +29,24 @@
 <!--      </div>-->
       <div class="item">
         <label for="stock">Movie Stock</label>
-        <input id="stock" type="text"   name="stock" required/>
+        <input id="stock" type="number"  ngModel name="stock" required/>
       </div>
       <div class="item">
         <label for="publisher">Publisher</label>
-        <input id="publisher" type="text"   name="publisher" required/>
+        <input id="publisher" type="text" ngModel name="studio" required/>
       </div>
       <div class="item">
         <label for="movieGenres">Genres</label>
-        <input id="movieGenres" type="text"   name="movieGenres"/>
+        <input id="movieGenres" type="text" ngModel name="genres"/>
       </div>
       <div class="item">
         <label for="price">Price</label>
-        <input id="price" type="tel"   name="price" required/>
+        <input id="price" type="number"  ngModel name="price" required/>
       </div>
     </div>
     <div class="item2 item">
       <label for="mainActors">Main Actors</label>
-      <input id="mainActors" type="tel"   name="mainActors" required  size=""/>
+      <input id="mainActors" type="text"  ngModel name="mainActors" required  size=""/>
     </div>
 
     <div class="btn-block">
