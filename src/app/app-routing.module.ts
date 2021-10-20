@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
 import {HomepageComponent} from "./homepage/homepage.component";
 import {CreateuserComponent} from "./createuser/createuser.component";
 import {EdituserComponent} from "./edituser/edituser.component";
@@ -31,6 +32,7 @@ const routes: Routes = [
   {
     path:'rentreturnmovie',
     component: RentreturnMovieComponent
+
   }
 ];
 
