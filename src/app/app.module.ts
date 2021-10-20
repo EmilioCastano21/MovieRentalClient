@@ -15,6 +15,7 @@ import {FooterComponent} from "./footer/footer.component";
 import {CreateuserComponent} from "./createuser/createuser.component";
 import {EdituserComponent} from "./edituser/edituser.component";
 import {RentreturnMovieComponent} from "./rentreturn-movie/rentreturn-movie.component";
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import {RentreturnMovieComponent} from "./rentreturn-movie/rentreturn-movie.comp
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [MovieService],
   bootstrap: [AppComponent]

@@ -16,7 +16,7 @@ export class MovieService {
   }
 
   public addMovie(movie : Movie): Observable<Movie> {
-    return this.http.post<Movie> (`${this.apiServerUrl}/movie/add`,movie)
+    return this.http.post<Movie> (`${this.apiServerUrl}/movie/create`,movie)
   }
 
   public updateMovie(movie : Movie): Observable<Movie> {

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
-import {User} from "../createuser/user";
+import {User} from "../entity/user";
 import { environment } from 'src/environments/environment';
 
 @Injectable({ providedIn: 'root'})
@@ -16,7 +16,7 @@ export class UserService {
   }
 
   public addUser(user : User): Observable<User> {
-    return this.http.post<User> (`${this.apiServerUrl}/user/add`,user)
+    return this.http.post<User> (`${this.apiServerUrl}/user/create`,user)
   }
 
   public updateUser(user : User): Observable<User> {
