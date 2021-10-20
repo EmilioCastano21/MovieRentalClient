@@ -1,0 +1,34 @@
+<body>
+<div class="box">
+  <div class="banner">
+    <h1 class="h1">View all Users</h1>
+  </div>
+  <p>
+
+  </p>
+  <table id="customers" class="users">
+    <tr>
+      <th>User ID</th>
+      <th>Address</th>
+      <th>Email</th>
+      <th>cellNumber</th>
+      <th>id Number</th>
+      <th>first Name</th>
+      <th>last Name</th>
+    </tr>
+    <tr *ngFor="let user of users">
+      <td>{{user.userId}}</td>
+      <td>{{user.address}}</td>
+      <td>{{user.email}}</td>
+      <td>{{user.cellNumber}}</td>
+      <td>{{user.idNumber}}</td>
+      <td>{{user.firstName}}</td>
+      <td>{{user.lastName}}</td>
+    </tr>
+
+  </table>
+</div>
+
+</body>
+
+
