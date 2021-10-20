@@ -1,0 +1,40 @@
+.h1{
+  font-family: Helvetica;
+  text-align: center;
+
+}
+.banner {
+  position: relative;
+  height: 100px;
+  background-color: #66B2FF;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid black;
+}
+.movies {
+  font-family: Helvetica;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.movies td, .movies th {
+  border: 1px solid #66B2FF;
+  padding: 10px;
+}
+
+.movies tr:nth-child(even){
+  background-color: white;}
+
+.movies tr:hover {
+  background-color: gray;}
+
+.movies th {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  text-align: left;
+  background-color: black;
+  color: white;
+}
