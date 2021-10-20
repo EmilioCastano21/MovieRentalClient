@@ -7,6 +7,7 @@ import {EdituserComponent} from "./edituser/edituser.component";
 import {CreatemovieComponent} from "./createmovie/createmovie.component";
 import {ViewmoviesComponent} from "./viewmovies/viewmovies.component";
 import {RentreturnMovieComponent} from "./rentreturn-movie/rentreturn-movie.component";
+import {ViewusersComponent} from "./viewusers/viewusers.component";
 
 const routes: Routes = [
   {
@@ -32,6 +33,11 @@ const routes: Routes = [
   {
     path:'rentreturnmovie',
     component: RentreturnMovieComponent
+
+  },
+  {
+    path:'viewusers',
+    component: ViewusersComponent
 
   }
 ];
