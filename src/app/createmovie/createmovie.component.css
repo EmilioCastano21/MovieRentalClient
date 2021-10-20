@@ -45,6 +45,7 @@ form {
   justify-content: center;
   align-items: center;
   text-align: center;
+  border-radius: 25px;
 }
 .image{
   right: 40px;
@@ -99,7 +100,7 @@ textarea {
 
 .week {
   display:flex;
-  justfiy-content:space-between;
+  justify-content:space-between;
 }
 .colums {
   display:flex;
