@@ -2,9 +2,9 @@
 .navbar
 {
   background-color: black;
+  color: white;
   height: 8rem;
-  overflow-x: hidden;
-  overflow-y: hidden !important;
+  width: 100%;
 }
 
 .navbar-item
@@ -24,24 +24,13 @@
 
 .navbar-link
 {
-  color: white;
+  color: black;
   background-color: black;
 }
 .navbar-link:hover
 {
   background-color: black;
   color: #66B2FF;
-}
-
-.navbar-dropdown
-{
-  background-color: black;
-}
-
-.navbar-dropdown:hover
-{
-  background-color: black;
-
 }
 
 .navbar-start{
