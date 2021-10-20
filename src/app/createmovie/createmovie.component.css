@@ -1,5 +1,5 @@
 html, body {
-  min-height: 100%;
+  height: 100vh;
 }
 body, div, form, input, select, textarea, label, p {
   padding: 0;
