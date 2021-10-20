@@ -8,6 +8,7 @@ import {CreatemovieComponent} from "./createmovie/createmovie.component";
 import {ViewmoviesComponent} from "./viewmovies/viewmovies.component";
 import {RentreturnMovieComponent} from "./rentreturn-movie/rentreturn-movie.component";
 import {ViewusersComponent} from "./viewusers/viewusers.component";
+import { ViewrentalsComponent } from './viewrentals/viewrentals.component';
 
 const routes: Routes = [
   {
@@ -39,6 +40,10 @@ const routes: Routes = [
     path:'viewusers',
     component: ViewusersComponent
 
+  },
+  {
+    path:'viewrentals',
+    component: ViewrentalsComponent
   }
 ];
 

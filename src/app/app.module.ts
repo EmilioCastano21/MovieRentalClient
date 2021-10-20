@@ -17,6 +17,7 @@ import {EdituserComponent} from "./edituser/edituser.component";
 import {RentreturnMovieComponent} from "./rentreturn-movie/rentreturn-movie.component";
 import { FormsModule } from '@angular/forms';
 import { ViewusersComponent } from './viewusers/viewusers.component';
+import { ViewrentalsComponent } from './viewrentals/viewrentals.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { ViewusersComponent } from './viewusers/viewusers.component';
     RentreturnMovieComponent,
     HeaderComponent,
     FooterComponent,
-    ViewusersComponent
+    ViewusersComponent,
+    ViewrentalsComponent
   ],
   imports: [
     BrowserModule,

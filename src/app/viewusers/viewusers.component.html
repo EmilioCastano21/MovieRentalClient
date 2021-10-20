@@ -9,21 +9,22 @@
   <table id="customers" class="users">
     <tr>
       <th>User ID</th>
-      <th>Address</th>
-      <th>Email</th>
-      <th>cellNumber</th>
-      <th>id Number</th>
       <th>first Name</th>
       <th>last Name</th>
+      <th>id Number</th>
+      <th>Email</th>
+      <th>cellNumber</th>
+      <th>Address</th>
+
     </tr>
     <tr *ngFor="let user of users">
       <td>{{user.userId}}</td>
-      <td>{{user.address}}</td>
-      <td>{{user.email}}</td>
-      <td>{{user.cellNumber}}</td>
-      <td>{{user.idNumber}}</td>
       <td>{{user.firstName}}</td>
       <td>{{user.lastName}}</td>
+      <td>{{user.idNumber}}</td>
+      <td>{{user.email}}</td>
+      <td>{{user.cellNumber}}</td>
+      <td>{{user.address}}</td>
     </tr>
 
   </table>
