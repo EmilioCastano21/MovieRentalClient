@@ -1,3 +1,4 @@
+
 export interface Movie{
   movieId : string;
   title : string;
@@ -8,3 +9,4 @@ export interface Movie{
   stock : number;
   price: number;
 }
+
